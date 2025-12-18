@@ -1,0 +1,179 @@
+<!-- TOUR-AFRIC Footer Component -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section footer-about">
+        <h3>TOUR-AFRIC</h3>
+        <p class="footer-impact">
+          Ethical adventures that protect wildlife, empower communities, and preserve Ghana's natural heritage.
+        </p>
+      </div>
+      
+      <div class="footer-section footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="adventures.html">Adventures</a></li>
+          <li><a href="coastal.html">Coastal & Islands</a></li>
+          <li><a href="impact.html">Our Impact</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:info@tourafric.com">info@tourafric.com</a>
+          </li>
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a href="tel:+233123456789">+233 123 456 789</a>
+          </li>
+          <li>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>Accra, Ghana</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer-section footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://facebook.com" aria-label="Visit our Facebook page" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://instagram.com" aria-label="Visit our Instagram profile" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com" aria-label="Visit our Twitter profile" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://youtube.com" aria-label="Visit our YouTube channel" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> TOUR-AFRIC. All rights reserved. Committed to sustainable tourism.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+.site-footer {
+  background-color: var(--ghana-forest);
+  color: var(--text-light);
+  padding: var(--space-3xl) 0 var(--space-lg);
+  margin-top: var(--space-3xl);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--ghana-gold);
+  margin-bottom: var(--space-md);
+  font-size: 1.25rem;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+}
+
+.footer-impact {
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: var(--space-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.footer-section a {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: var(--transition-default);
+}
+
+.footer-section a:hover {
+  color: var(--ghana-gold);
+  text-decoration: none;
+}
+
+.footer-section i {
+  color: var(--ghana-gold);
+  width: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: var(--transition-default);
+}
+
+.social-links a:hover {
+  background-color: var(--ghana-gold);
+  color: var(--text-dark);
+  transform: translateY(-3px);
+}
+
+.social-links i {
+  font-size: 1.25rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-lg);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+  
+  .site-footer {
+    padding: var(--space-2xl) 0 var(--space-md);
+  }
+}
+</style>
+
+<script>
+// Update copyright year
+document.addEventListener('DOMContentLoaded', function() {
+  const yearSpan = document.getElementById('currentYear');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
+</script>

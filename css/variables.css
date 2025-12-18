@@ -1,0 +1,44 @@
+/* TOUR-AFRIC Ghana Color Palette & Design Tokens */
+
+:root {
+  /* Ghana-inspired Color Palette */
+  --ghana-forest: #0B3B24;
+  --ghana-gold: #D99A00;
+  --ghana-brown: #6B3E1D;
+  --ghana-blue: #145C9E;
+  --ghana-sand: #F5E8D0;
+  --text-dark: #1A1A1A;
+  --text-light: #FDF6EC;
+  
+  /* Button Hover States */
+  --ghana-gold-dark: #B87D00;
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
+  
+  /* Font Sizes */
+  --text-base: 16px;
+  --text-hero-min: 28px;
+  --text-hero-max: 40px;
+  --text-section-min: 20px;
+  --text-section-max: 24px;
+  
+  /* Spacing Scale */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  
+  /* Shadows */
+  --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.12);
+  
+  /* Border Radius */
+  --radius-card: 10px;
+  
+  /* Transitions */
+  --transition-default: all 0.3s ease;
+}
