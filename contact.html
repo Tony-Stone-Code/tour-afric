@@ -225,7 +225,7 @@
             
             <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
               <button type="submit" class="btn btn-primary">Send Inquiry</button>
-              <button type="button" class="btn btn-secondary" onclick="alert('Call scheduling feature coming soon!')">Schedule a Call</button>
+              <button type="button" class="btn btn-secondary" id="scheduleCallBtn">Schedule a Call</button>
             </div>
           </form>
         </div>
@@ -333,24 +333,25 @@
   <div id="footer-placeholder"></div>
 
   <!-- Scripts -->
+  <script src="js/main.js"></script>
   <script>
-    // Load header and footer
-    fetch('includes/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-    
-    fetch('includes/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
-    
     // Form submission handler
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your inquiry! We will respond within 24 hours. (Form submission functionality will be implemented with backend integration.)');
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your inquiry! We will respond within 24 hours.');
+        });
+      }
+      
+      // Schedule call button handler
+      const scheduleBtn = document.getElementById('scheduleCallBtn');
+      if (scheduleBtn) {
+        scheduleBtn.addEventListener('click', function() {
+          alert('Our team will contact you shortly to schedule a call at your convenience.');
+        });
+      }
     });
   </script>
   
