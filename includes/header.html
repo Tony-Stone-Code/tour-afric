@@ -1,0 +1,47 @@
+<!-- TOUR-AFRIC Header Component -->
+<link rel="stylesheet" href="css/header.css">
+
+<header class="site-header">
+  <div class="container">
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <div class="brand-block">
+        <a href="index.html" class="brand-link">
+          <span class="brand-logo" aria-label="TOUR-AFRIC Logo">🦁</span>
+          <span class="brand-wordmark">TOUR-AFRIC</span>
+        </a>
+      </div>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-icon"></span>
+      </button>
+      
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
+        <li><a href="coastal.html">Coastal & Islands</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">Plan Your Trip</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+// Mobile navigation toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function() {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+      navMenu.classList.toggle('active');
+    });
+  }
+});
+</script>

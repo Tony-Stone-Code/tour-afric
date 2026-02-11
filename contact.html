@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact TOUR-AFRIC to plan your ethical Ghana adventure. Get personalized itineraries, expert advice, and start your journey today.">
+  <meta name="keywords" content="contact TOUR-AFRIC, plan trip Ghana, book tour, travel consultation, custom itinerary">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact & Plan Your Trip - TOUR-AFRIC Ghana">
+  <meta property="og:description" content="Start planning your ethical adventure in Ghana. Personalized service, expert guidance, community-focused travel.">
+  <meta property="og:type" content="website">
+  
+  <title>Contact & Plan Your Trip | TOUR-AFRIC Ghana - Custom Itineraries</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Intro Section -->
+  <section class="section" style="padding-top: var(--space-2xl);">
+    <div class="container">
+      <h1 style="text-align: center; margin-bottom: var(--space-lg);">Plan Your Trip</h1>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto; font-size: 1.125rem;">
+        Let's design your perfect Ghana adventure. Fill out the form below, and our team will 
+        craft a custom itinerary tailored to your interests and travel style.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Promises -->
+  <section class="section white-panel">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="icon-block">
+          <i class="fas fa-clock" aria-hidden="true"></i>
+          <h3>24-Hour Response</h3>
+          <p>We reply to all inquiries within one business day with personalized recommendations.</p>
+        </div>
+        
+        <div class="icon-block">
+          <i class="fas fa-user-friends" aria-hidden="true"></i>
+          <h3>Locally Guided</h3>
+          <p>Every tour is led by experienced Ghanaian guides who know the land and culture intimately.</p>
+        </div>
+        
+        <div class="icon-block">
+          <i class="fas fa-leaf" aria-hidden="true"></i>
+          <h3>Carbon Offset Options</h3>
+          <p>We offer carbon offset programs for all tours, supporting reforestation in Ghana.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); align-items: start;">
+        <!-- Form -->
+        <div style="background: white; padding: var(--space-2xl); border-radius: var(--radius-card); box-shadow: var(--shadow-soft);">
+          <h2 style="margin-bottom: var(--space-xl);">Inquiry Form</h2>
+          
+          <form id="contactForm" action="#" method="POST">
+            <div style="margin-bottom: var(--space-lg);">
+              <label for="name" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">
+                Name <span style="color: red;">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                style="width: 100%; padding: var(--space-md); border: 1px solid #ddd; border-radius: 5px; font-family: var(--font-body);"
+                aria-required="true"
+              >
+            </div>
+            
+            <div style="margin-bottom: var(--space-lg);">
+              <label for="email" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">
+                Email <span style="color: red;">*</span>
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                style="width: 100%; padding: var(--space-md); border: 1px solid #ddd; border-radius: 5px; font-family: var(--font-body);"
+                aria-required="true"
+              >
+            </div>
+            
+            <div style="margin-bottom: var(--space-lg);">
+              <label for="phone" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">
+                Phone (Optional)
+              </label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                style="width: 100%; padding: var(--space-md); border: 1px solid #ddd; border-radius: 5px; font-family: var(--font-body);"
+              >
+            </div>
+            
+            <div style="margin-bottom: var(--space-lg);">
+              <label for="tripType" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">
+                Trip Type <span style="color: red;">*</span>
+              </label>
+              <select 
+                id="tripType" 
+                name="tripType" 
+                required 
+                style="width: 100%; padding: var(--space-md); border: 1px solid #ddd; border-radius: 5px; font-family: var(--font-body);"
+                aria-required="true"
+              >
+                <option value="">Select a trip type</option>
+                <option value="adventure">Adventure Tour</option>
+                <option value="coastal">Coastal & Islands</option>
+                <option value="wildlife">Wildlife Safari</option>
+                <option value="culture">Cultural Experience</option>
+                <option value="custom">Custom Itinerary</option>
+              </select>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin-bottom: var(--space-lg);">
+              <div>
+                <label for="dates" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">
+                  Travel Dates
+                </label>
+                <input 
+                  type="text" 
+                  id="dates" 
+                  name="dates" 
+                  placeholder="e.g., March 2024"
+                  style="width: 100%; padding: var(--space-md); border: 1px solid #ddd; border-radius: 5px; font-family: var(--font-body);"
+                >
+              </div>
+              
+              <div>
+                <label for="groupSize" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">
+                  Group Size
+                </label>
+                <input 
+                  type="number" 
+                  id="groupSize" 
+                  name="groupSize" 
+                  min="1" 
+                  placeholder="1"
+                  style="width: 100%; padding: var(--space-md); border: 1px solid #ddd; border-radius: 5px; font-family: var(--font-body);"
+                >
+              </div>
+            </div>
+            
+            <div style="margin-bottom: var(--space-lg);">
+              <label for="budget" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">
+                Budget Range (USD)
+              </label>
+              <select 
+                id="budget" 
+                name="budget" 
+                style="width: 100%; padding: var(--space-md); border: 1px solid #ddd; border-radius: 5px; font-family: var(--font-body);"
+              >
+                <option value="">Select budget range</option>
+                <option value="1000-2000">$1,000 - $2,000</option>
+                <option value="2000-3500">$2,000 - $3,500</option>
+                <option value="3500-5000">$3,500 - $5,000</option>
+                <option value="5000plus">$5,000+</option>
+              </select>
+            </div>
+            
+            <div style="margin-bottom: var(--space-lg);">
+              <label style="display: block; margin-bottom: var(--space-sm); font-weight: 600;">
+                Interests (Check all that apply)
+              </label>
+              <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+                <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <input type="checkbox" name="interests" value="wildlife">
+                  <span>Wildlife & Nature</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <input type="checkbox" name="interests" value="hiking">
+                  <span>Hiking & Adventure</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <input type="checkbox" name="interests" value="beaches">
+                  <span>Beaches & Coast</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <input type="checkbox" name="interests" value="culture">
+                  <span>Culture & Heritage</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: var(--space-sm);">
+                  <input type="checkbox" name="interests" value="photography">
+                  <span>Photography</span>
+                </label>
+              </div>
+            </div>
+            
+            <div style="margin-bottom: var(--space-xl);">
+              <label for="message" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">
+                Message <span style="color: red;">*</span>
+              </label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                required 
+                placeholder="Tell us about your dream Ghana adventure..."
+                style="width: 100%; padding: var(--space-md); border: 1px solid #ddd; border-radius: 5px; font-family: var(--font-body); resize: vertical;"
+                aria-required="true"
+              ></textarea>
+            </div>
+            
+            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap;">
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+              <button type="button" class="btn btn-secondary" id="scheduleCallBtn">Schedule a Call</button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Contact Info & Map -->
+        <div>
+          <!-- Contact Info Block -->
+          <div style="background: white; padding: var(--space-xl); border-radius: var(--radius-card); box-shadow: var(--shadow-soft); margin-bottom: var(--space-xl);">
+            <h3 style="margin-bottom: var(--space-lg); color: var(--ghana-forest);">Contact Information</h3>
+            
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="display: flex; align-items: start; gap: var(--space-md); margin-bottom: var(--space-lg);">
+                <i class="fas fa-envelope" aria-hidden="true" style="color: var(--ghana-gold); font-size: 1.25rem; margin-top: 2px;"></i>
+                <div>
+                  <strong>Email</strong><br>
+                  <a href="mailto:info@tourafric.com">info@tourafric.com</a>
+                </div>
+              </li>
+              
+              <li style="display: flex; align-items: start; gap: var(--space-md); margin-bottom: var(--space-lg);">
+                <i class="fas fa-phone" aria-hidden="true" style="color: var(--ghana-gold); font-size: 1.25rem; margin-top: 2px;"></i>
+                <div>
+                  <strong>Phone</strong><br>
+                  <a href="tel:+233123456789">+233 123 456 789</a>
+                </div>
+              </li>
+              
+              <li style="display: flex; align-items: start; gap: var(--space-md); margin-bottom: var(--space-lg);">
+                <i class="fab fa-whatsapp" aria-hidden="true" style="color: var(--ghana-gold); font-size: 1.25rem; margin-top: 2px;"></i>
+                <div>
+                  <strong>WhatsApp</strong><br>
+                  <a href="https://wa.me/233123456789" target="_blank" rel="noopener noreferrer">+233 123 456 789</a>
+                </div>
+              </li>
+              
+              <li style="display: flex; align-items: start; gap: var(--space-md);">
+                <i class="fas fa-map-marker-alt" aria-hidden="true" style="color: var(--ghana-gold); font-size: 1.25rem; margin-top: 2px;"></i>
+                <div>
+                  <strong>Office</strong><br>
+                  TOUR-AFRIC Headquarters<br>
+                  Accra, Ghana
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Map Placeholder -->
+          <div style="background: white; padding: var(--space-xl); border-radius: var(--radius-card); box-shadow: var(--shadow-soft);">
+            <h3 style="margin-bottom: var(--space-lg); color: var(--ghana-forest);">Our Location</h3>
+            <div style="background: var(--ghana-sand); height: 300px; border-radius: var(--radius-card); display: flex; align-items: center; justify-content: center; color: var(--ghana-forest); font-weight: 600;">
+              <div style="text-align: center;">
+                <i class="fas fa-map-marked-alt" aria-hidden="true" style="font-size: 3rem; margin-bottom: var(--space-md);"></i>
+                <p>Interactive map coming soon</p>
+                <p style="font-size: 0.875rem; font-weight: 400;">Accra, Ghana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section white-panel">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: var(--space-2xl);">Quick Answers</h2>
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        <details class="faq-item" style="background: white; padding: var(--space-lg); margin-bottom: var(--space-md); border-radius: var(--radius-card); border: 1px solid #ddd;">
+          <summary style="font-weight: 600; cursor: pointer; font-size: 1.125rem;">Do I need a visa to visit Ghana?</summary>
+          <p style="margin-top: var(--space-md); color: #555;">
+            Most visitors need a visa. Ghana offers e-visas for citizens of many countries, which can be applied 
+            for online before travel. We provide detailed visa guidance once you book.
+          </p>
+        </details>
+        
+        <details class="faq-item" style="background: white; padding: var(--space-lg); margin-bottom: var(--space-md); border-radius: var(--radius-card); border: 1px solid #ddd;">
+          <summary style="font-weight: 600; cursor: pointer; font-size: 1.125rem;">What payment methods do you accept?</summary>
+          <p style="margin-top: var(--space-md); color: #555;">
+            We accept bank transfers, credit cards (Visa, Mastercard), and PayPal. A 30% deposit secures your 
+            booking, with the balance due 30 days before departure.
+          </p>
+        </details>
+        
+        <details class="faq-item" style="background: white; padding: var(--space-lg); margin-bottom: var(--space-md); border-radius: var(--radius-card); border: 1px solid #ddd;">
+          <summary style="font-weight: 600; cursor: pointer; font-size: 1.125rem;">What's your cancellation policy?</summary>
+          <p style="margin-top: var(--space-md); color: #555;">
+            Cancellations 60+ days before departure: full refund minus 10% processing fee. 
+            30-59 days: 50% refund. Less than 30 days: no refund, but we can reschedule for a future date.
+          </p>
+        </details>
+        
+        <details class="faq-item" style="background: white; padding: var(--space-lg); margin-bottom: var(--space-md); border-radius: var(--radius-card); border: 1px solid #ddd;">
+          <summary style="font-weight: 600; cursor: pointer; font-size: 1.125rem;">Are tours suitable for families with children?</summary>
+          <p style="margin-top: var(--space-md); color: #555;">
+            Absolutely! Many of our tours are family-friendly. We offer modified itineraries for families 
+            with young children, including shorter hikes and more cultural activities.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Form submission handler
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your inquiry! We will respond within 24 hours.');
+        });
+      }
+      
+      // Schedule call button handler
+      const scheduleBtn = document.getElementById('scheduleCallBtn');
+      if (scheduleBtn) {
+        scheduleBtn.addEventListener('click', function() {
+          alert('Our team will contact you shortly to schedule a call at your convenience.');
+        });
+      }
+    });
+  </script>
+  
+  <style>
+    @media (max-width: 992px) {
+      section > div > div[style*="grid-template-columns: 1fr 1fr"] {
+        display: block !important;
+      }
+      
+      section > div > div[style*="grid-template-columns: 1fr 1fr"] > div:first-child {
+        margin-bottom: var(--space-xl);
+      }
+    }
+  </style>
+</body>
+</html>

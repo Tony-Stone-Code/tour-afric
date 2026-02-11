@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover ethical adventure tours in Ghana - Mole National Park, Kakum Canopy Walk, Volta hikes, and more. Locally guided, sustainably operated.">
+  <meta name="keywords" content="Ghana adventures, Mole National Park, Kakum canopy walk, wildlife tours, hiking Ghana, ethical tours">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Adventure Tours - TOUR-AFRIC Ghana">
+  <meta property="og:description" content="Ethical adventure tours across Ghana's most stunning landscapes, led by local guides.">
+  <meta property="og:type" content="website">
+  
+  <title>Adventure Tours in Ghana | TOUR-AFRIC - Ethical Wildlife & Hiking Experiences</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+
+  <!-- Intro Section -->
+  <section class="section" style="padding-top: var(--space-2xl);">
+    <div class="container">
+      <h1 style="text-align: center; margin-bottom: var(--space-lg);">Adventure Tours</h1>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto var(--space-2xl); font-size: 1.125rem;">
+        Experience Ghana's wild beauty through ethical, locally guided adventures. 
+        Every tour supports conservation efforts and empowers communities.
+      </p>
+      
+      <!-- Filters (Static for now) -->
+      <div class="filters" style="background: white; padding: var(--space-lg); border-radius: var(--radius-card); box-shadow: var(--shadow-soft); margin-bottom: var(--space-2xl);">
+        <h3 style="margin-bottom: var(--space-md); font-size: 1.125rem;">Filter Adventures</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-md);">
+          <div>
+            <label for="difficulty" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">Difficulty</label>
+            <select id="difficulty" style="width: 100%; padding: var(--space-sm); border: 1px solid #ddd; border-radius: 5px;">
+              <option value="">All Levels</option>
+              <option value="easy">Easy</option>
+              <option value="moderate">Moderate</option>
+              <option value="challenging">Challenging</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="region" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">Region</label>
+            <select id="region" style="width: 100%; padding: var(--space-sm); border: 1px solid #ddd; border-radius: 5px;">
+              <option value="">All Regions</option>
+              <option value="north">Northern Ghana</option>
+              <option value="volta">Volta Region</option>
+              <option value="ashanti">Ashanti Region</option>
+              <option value="coast">Coastal Region</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="interest" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">Interest</label>
+            <select id="interest" style="width: 100%; padding: var(--space-sm); border: 1px solid #ddd; border-radius: 5px;">
+              <option value="">All Interests</option>
+              <option value="wildlife">Wildlife</option>
+              <option value="hiking">Hiking</option>
+              <option value="culture">Culture</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="duration" style="display: block; margin-bottom: var(--space-xs); font-weight: 600;">Duration</label>
+            <select id="duration" style="width: 100%; padding: var(--space-sm); border: 1px solid #ddd; border-radius: 5px;">
+              <option value="">Any Length</option>
+              <option value="1day">1 Day</option>
+              <option value="2-3days">2-3 Days</option>
+              <option value="4plus">4+ Days</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adventure Cards Grid -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="grid grid-3">
+        <!-- Mole National Park -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/mole-national-park.jpg" alt="Elephants roaming Mole National Park, Northern Ghana" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Northern Ghana</span>
+            <h3 class="card-title">Mole National Park Safari</h3>
+            <p class="card-text">
+              Ghana's largest wildlife refuge. Spot elephants, antelopes, and over 300 bird species on guided walking safaris.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+        
+        <!-- Kakum Canopy Walk -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/kakum-canopy-walk.jpg" alt="Kakum National Park canopy walkway suspended in rainforest" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Central Region</span>
+            <h3 class="card-title">Kakum Canopy Walk</h3>
+            <p class="card-text">
+              Walk 40 meters above the rainforest floor on suspended bridges. Experience Ghana's biodiversity from the treetops.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+        
+        <!-- Volta Hikes -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/volta-mountains.jpg" alt="Scenic mountain landscape in Volta Region, Ghana" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Volta Region</span>
+            <h3 class="card-title">Volta Mountain Treks</h3>
+            <p class="card-text">
+              Hike through lush forests to stunning waterfalls. Visit traditional villages and experience authentic Ghanaian culture.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+        
+        <!-- Shai Hills -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/shai-hills.jpg" alt="Rock formations and wildlife at Shai Hills Reserve" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Greater Accra</span>
+            <h3 class="card-title">Shai Hills Reserve</h3>
+            <p class="card-text">
+              Explore dramatic rock formations and spot baboons, antelopes, and ostriches just an hour from Accra.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+        
+        <!-- Tafi Atome Monkey Sanctuary -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/tafi-atome-monkeys.jpg" alt="Mona monkeys at Tafi Atome Sanctuary, Ghana" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Volta Region</span>
+            <h3 class="card-title">Tafi Atome Monkey Sanctuary</h3>
+            <p class="card-text">
+              Meet sacred Mona monkeys in their natural habitat. Community-run conservation at its finest.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+        
+        <!-- Lake Bosomtwe -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/lake-bosomtwe.jpg" alt="Crater Lake Bosomtwe surrounded by hills, Ashanti Region" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Ashanti Region</span>
+            <h3 class="card-title">Lake Bosomtwe Crater</h3>
+            <p class="card-text">
+              Ghana's only natural lake, formed in a meteorite impact crater. Hike, swim, and learn about Ashanti traditions.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+        
+        <!-- Wli Waterfalls -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/wli-waterfalls.jpg" alt="Wli Waterfalls, Ghana's highest waterfall in Volta Region" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Volta Region</span>
+            <h3 class="card-title">Wli Waterfalls Trek</h3>
+            <p class="card-text">
+              Ghana's highest waterfall cascades 80 meters into a crystal pool. Challenging hike through pristine forest.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+        
+        <!-- Boti Falls -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/boti-falls.jpg" alt="Twin Boti Falls in Eastern Region, Ghana" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Eastern Region</span>
+            <h3 class="card-title">Boti Falls & Umbrella Rock</h3>
+            <p class="card-text">
+              Twin waterfalls with sacred significance. Visit during rainy season when they "kiss" at the bottom.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+        
+        <!-- Aburi Botanical Gardens -->
+        <article class="card">
+          <div class="card-media">
+            <img src="images/aburi-gardens.jpg" alt="Lush Aburi Botanical Gardens with exotic plants" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Eastern Region</span>
+            <h3 class="card-title">Aburi Botanical Gardens</h3>
+            <p class="card-text">
+              Explore 160+ year old gardens with over 600 plant species. Perfect for nature walks and bird watching.
+            </p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section white-panel">
+    <div class="container" style="text-align: center;">
+      <h2 style="margin-bottom: var(--space-lg);">Ready for Your Adventure?</h2>
+      <p style="max-width: 600px; margin: 0 auto var(--space-xl); font-size: 1.125rem;">
+        Let us craft a custom itinerary that matches your interests, fitness level, and travel dates.
+      </p>
+      <a href="contact.html" class="btn btn-primary">Plan My Adventure</a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: var(--space-2xl);">Frequently Asked Questions</h2>
+      <div style="max-width: 800px; margin: 0 auto;">
+        <details class="faq-item" style="background: white; padding: var(--space-lg); margin-bottom: var(--space-md); border-radius: var(--radius-card); box-shadow: var(--shadow-soft);">
+          <summary style="font-weight: 600; cursor: pointer; font-size: 1.125rem;">What should I pack for adventure tours?</summary>
+          <p style="margin-top: var(--space-md); color: #555;">
+            Essential items include comfortable hiking boots, lightweight breathable clothing, sun protection (hat, sunscreen), 
+            insect repellent, reusable water bottle, and a camera. We provide detailed packing lists for each tour.
+          </p>
+        </details>
+        
+        <details class="faq-item" style="background: white; padding: var(--space-lg); margin-bottom: var(--space-md); border-radius: var(--radius-card); box-shadow: var(--shadow-soft);">
+          <summary style="font-weight: 600; cursor: pointer; font-size: 1.125rem;">What's the best season for adventures?</summary>
+          <p style="margin-top: var(--space-md); color: #555;">
+            Ghana's dry season (November-March) offers excellent conditions for most adventures. The rainy season (April-October) 
+            brings lush landscapes and fewer crowds, with certain waterfalls at their most spectacular.
+          </p>
+        </details>
+        
+        <details class="faq-item" style="background: white; padding: var(--space-lg); margin-bottom: var(--space-md); border-radius: var(--radius-card); box-shadow: var(--shadow-soft);">
+          <summary style="font-weight: 600; cursor: pointer; font-size: 1.125rem;">Are the tours safe?</summary>
+          <p style="margin-top: var(--space-md); color: #555;">
+            Safety is our top priority. All guides are certified and experienced. Tours are designed with appropriate safety margins, 
+            and we maintain comprehensive insurance and emergency protocols.
+          </p>
+        </details>
+        
+        <details class="faq-item" style="background: white; padding: var(--space-lg); margin-bottom: var(--space-md); border-radius: var(--radius-card); box-shadow: var(--shadow-soft);">
+          <summary style="font-weight: 600; cursor: pointer; font-size: 1.125rem;">How does tourism support sustainability?</summary>
+          <p style="margin-top: var(--space-md); color: #555;">
+            Tour fees directly fund conservation projects, anti-poaching efforts, and community development. 
+            Local guides receive fair wages, and we offset carbon emissions for all transportation.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

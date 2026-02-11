@@ -1,0 +1,320 @@
+/* TOUR-AFRIC Base Styles */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--text-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: var(--ghana-sand);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  margin-bottom: var(--space-lg);
+}
+
+h1 {
+  font-size: clamp(var(--text-hero-min), 5vw, var(--text-hero-max));
+}
+
+h2 {
+  font-size: clamp(var(--text-section-min), 3vw, var(--text-section-max));
+}
+
+p {
+  margin-bottom: var(--space-md);
+}
+
+/* Links */
+a {
+  color: var(--ghana-blue);
+  text-decoration: none;
+  transition: var(--transition-default);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid var(--ghana-blue);
+  outline-offset: 2px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: var(--space-md) var(--space-xl);
+  border-radius: 5px;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-default);
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 3px solid var(--ghana-blue);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background-color: var(--ghana-gold);
+  color: var(--text-dark);
+  border-color: var(--ghana-gold);
+}
+
+.btn-primary:hover {
+  background-color: var(--ghana-gold-dark);
+  border-color: var(--ghana-gold-dark);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--ghana-forest);
+  border-color: var(--ghana-forest);
+}
+
+.btn-secondary:hover {
+  background-color: var(--ghana-forest);
+  color: var(--ghana-sand);
+  text-decoration: none;
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  color: var(--ghana-blue);
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+}
+
+.btn-tertiary:hover {
+  text-decoration: underline;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-md);
+  transition: var(--transition-default);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-media {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* 4:3 aspect ratio */
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  margin-bottom: var(--space-md);
+}
+
+.card-media img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: var(--space-md);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.card-tag {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--ghana-sand);
+  color: var(--ghana-forest);
+  border-radius: 3px;
+  font-size: 0.875rem;
+  margin-bottom: var(--space-sm);
+}
+
+.card-text {
+  color: #555;
+  margin-bottom: var(--space-md);
+  line-height: 1.5;
+}
+
+/* Container & Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.white-panel {
+  background-color: white;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--ghana-forest) 0%, transparent 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: var(--space-xl);
+}
+
+.hero-title {
+  color: white;
+  margin-bottom: var(--space-lg);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-2xl);
+  color: var(--text-light);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Icon Block */
+.icon-block {
+  text-align: center;
+}
+
+.icon-block i {
+  font-size: 2.5rem;
+  color: var(--ghana-gold);
+  margin-bottom: var(--space-md);
+}
+
+/* Lists */
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: var(--space-md);
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus visible for keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--ghana-blue);
+  outline-offset: 2px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 500px;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Image lazy loading placeholder */
+img[loading="lazy"] {
+  background-color: var(--ghana-sand);
+}
